@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.60.0](https://github.com/zachowj/node-red-contrib-home-assistant-websocket/compare/v0.59.0...v0.60.0) (2023-11-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **get-history:** All message inputs are required to be under msg.payload others have been removed. Current ones have been changed to camelcase to follow other nodes. Message ouputs msg.startdate, msg.enddate, msg.entity_id have been removed.
+
+### Bug Fixes
+
+* **get-history:** fix to work with regex entity ids ([3e3dc05](https://github.com/zachowj/node-red-contrib-home-assistant-websocket/commit/3e3dc0566a318a7d959a09c4fa6d05c96e070301)), closes [#924](https://github.com/zachowj/node-red-contrib-home-assistant-websocket/issues/924)
+
 ## [0.59.0](https://github.com/zachowj/node-red-contrib-home-assistant-websocket/compare/v0.58.2...v0.59.0) (2023-11-11)
 
 
